@@ -1,0 +1,24 @@
+body {
+  background-color: #f4eee8; /* alt: #f5cebe */
+}
+
+.personalInfo {
+  color: #325288;
+  padding-bottom: 0;
+}
+
+.personalInfo .phone {
+}
+
+.personalInfo .address {
+  font-size: 0.8rem;
+}
+
+.personalPic {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.workExperience {
+  color: #114e60;
+}

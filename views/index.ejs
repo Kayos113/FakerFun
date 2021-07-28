@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Faker Fun</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <div class="container-lg personalInfo">
+      <div class="row row-cols-2">
+        <div class="col-2 personalPic">
+          <img class="personalPic" src="<%= avatar %>" alt="Totally a real picture of <%= personName %>">
+        </div>
+        <div class="col-8 personalInfo">
+          <h1 class = "name"><%= personName %></h1>
+          <h3 class = "phone"><%= personPhone %></h3>
+          <p class = "address"><%= emailAddress %></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-md resumeBody">
+      <div class="row row-cols-2">
+        <div class="col-4 education">
+
+        </div>
+        <div class="col-1 spacerColumn">
+        </div>
+        <div class="col-6 workExperience">
+          <% for(let i=0; i < jobs.length; i++) { %>
+            <h3><%= jobs[i].title %> , <%= jobs[i].company %></h3>
+            <p><%= jobs[i].descriptor %></p>
+          <% } %>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
